@@ -8,7 +8,7 @@ def find_number_of_rows(data):
     """
     data = data.split("\n")
     sum = []
-    for i in data:
+    for i in data[:-1]:
         odd = i.split(",")[0]
         sum += [odd]
     return len(sum)
